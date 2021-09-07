@@ -1,25 +1,27 @@
+<!DOCTYPE html>
 <html lang="es"> 
 <head>
-    <title>Precio medio de un producto</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-width">
+    <title>Precio medio de un producto</title>
 </head>
     <body>
 
         <!-- A través de este simple programa en PHP se busca que el usuario introduzca el precio de tres productos en tres locales distintos, denominados “Local 1”, “Local 2” y “Local 3”. Una vez introducidos los datos correspondientes se debe calcular y mostrar el precio medio del producto. -->
 
-        <form name="formularioDatos" method="post" action="formulario.php">
-        <p>CÁLCULO DEL PRECIO MEDIO DE UN PRODUCTO</p>
+        <h1>CÁLCULO DEL PRECIO MEDIO DE UN PRODUCTO</h1>
+        <form action="formulario.php" method="get">
         <br>
-        Introduzca el precio en pesos del producto en el local 1:
-        <input type="text" name="precio1" value="">
-        <br>
-        Introduzca el precio en pesos del producto en el local 2:
-        <input type="text" name="precio2" value="">
-        <br>
-        Introduzca el precio en pesos del producto en el local 3:
-        <input type="text" name="precio3" value="">
-        <br>
-        <input type="submit" value="Calcular">
+            <label for="precio1">Introduzca el precio en pesos del producto en el local 1: </label>
+            <input type="number" name="precio1">
+            <br>
+            <label for="precio2">Introduzca el precio en pesos del producto en el local 2: </label>
+            <input type="number" name="precio2">
+            <br>
+            <label for="precio3">Introduzca el precio en pesos del producto en el local 3: </label>
+            <input type="number" name="precio3">
+            <br>
+            <input type="submit" value="Calcular">
         </form>
     </body>
 </html>
